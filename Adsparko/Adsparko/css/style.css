@@ -199,7 +199,7 @@ a[href*='mailto'] {
 img {
     display: inline-block;
     max-width: 100%;
-    height: auto;
+    height: 380px;
 }
 
 hr {
@@ -3519,9 +3519,9 @@ section {
 }
 
 .bg-gradient-1 {
-    background-image: -moz-linear-gradient(0deg, #F10066 0%, #ad1457 100%);
-    background-image: -webkit-linear-gradient(0deg, #F10066 0%, #ad1457 100%);
-    background-image: -ms-linear-gradient(0deg, #F10066 0%, #ad1457 100%);
+    background-image: -moz-linear-gradient(0deg, #F10066 0%, blue 100%);
+    background-image: -webkit-linear-gradient(0deg, #F10066 0%, indigo  100%);
+    background-image: -ms-linear-gradient(0deg, #F10066 0%, blue  100%);
     background-size: 200% auto;
     background-position: 0 50%;
 }
