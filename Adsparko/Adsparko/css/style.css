@@ -8324,7 +8324,7 @@ textarea.form-input.form-input-lg {
     padding-left: 25px;
 }
 
-.list-marked>li:before {
+/* .list-marked>li:before {
     position: absolute;
     top: .21em;
     left: 0;
@@ -8334,7 +8334,7 @@ textarea.form-input.form-input-lg {
     font-weight: 400;
     line-height: 1;
     color: #b7b7b7;
-}
+} */
 
 .list-marked a {
     color: #25252c;
@@ -23037,11 +23037,11 @@ ol ol {
     transform: translateY(100px);
 }
 
-.ui-to-top::before {
+/* .ui-to-top::before {
     content: '\f239';
     font-family: 'Material Design Icons';
     line-height: 50px;
-}
+} */
 
 .ui-to-top,
 .ui-to-top:active,
