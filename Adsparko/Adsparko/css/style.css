@@ -3786,6 +3786,13 @@ section {
     background-image: url("../images/crc.jpeg");
 }
 
+.bg-image-13 {
+    background-image: url("../images/graphi.gif");
+}
+.bg-image-14 {
+    background-image: url("../images/crc.jpg");
+}
+
 .bg-pattern-dark,
 .bg-additional-pattern-dark .bg-additional-item {
     background-image: url("../images/bg-pattern-dark.jpg");
@@ -5602,6 +5609,7 @@ h6.box-info-title,
     padding: 8.8px 28px;
     font-size: 14px;
     line-height: 24px;
+    width: 50%;
 }
 
 @media (min-width: 768px) {
@@ -14657,11 +14665,11 @@ strong {
 .section-wrap .section-wrap-image img {
     position: absolute;
     height: auto;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 50px;
+    min-height: 600px;
     max-width: none;
     top: 30%;
-    left: 50%;
+    left: 0%;
     transform: translate(-50%, -30%);
 }
 
