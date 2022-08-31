@@ -1,0 +1,20 @@
+{
+  "name": "cinemaug/phpmail",
+  "description": "Send emails with php backend",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "CugMail\\": "CugMail/"
+    },
+    "files": [
+      "CugMail/helpers.php"
+    ]
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "hassankhan/config": "dev-develop",
+    "symfony/yaml": "5.4.x-dev",
+    "phpmailer/phpmailer": "dev-master"
+  }
+}

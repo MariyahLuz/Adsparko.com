@@ -102,18 +102,18 @@
                         <hr class="divider divider-left divider-default">
                         <p class="big">You can contact us any way that is convenient for you. We are available 24/7 via fax or email. You can also use a quick contact form below or visit our office personally.</p>
                         <!-- RD Mailform-->
-                        <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                        <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="" id="contactForm">
                             <div class="row row-20">
                                 <div class="col-md-6">
                                     <div class="form-wrap form-wrap-validation">
                                         <label class="form-label-outside" for="form-1-name">First name</label>
-                                        <input class="form-input" id="form-1-name" type="text" name="name" data-constraints="@Required" />
+                                        <input class="form-input" id="form-1-name" type="text" name="fname" data-constraints="@Required" />
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-wrap form-wrap-validation">
                                         <label class="form-label-outside" for="form-1-last-name">Last name</label>
-                                        <input class="form-input" id="form-1-last-name" type="text" name="last-name" data-constraints="@Required" />
+                                        <input class="form-input" id="form-1-last-name" type="text" name="lname" data-constraints="@Required" />
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -136,7 +136,7 @@
                                 </div>
                                 <div class="col-sm-12 offset-custom-1">
                                     <div class="form-button">
-                                        <button class="button button-primary" type="submit">send message</button>
+                                        <button class="button button-primary" type="submit" id="send">send message</button>
                                     </div>
                                 </div>
                             </div>
@@ -258,6 +258,29 @@
         })(window, document, 'script', 'dataLayer', 'GTM-P9FT69');
     </script>
     <!-- End Google Tag Manager -->
+        <script type="text/javascript">
+        const contact = document.getElementById('contactForm');
+        contact.addEventListener('submit', function(e){
+            e.preventDefault();
+            const button = document.getElementById('send');
+            button.setAttribute('disabled', true);
+            button.innerHTML = "sending...";
+            (async () => {
+                const rawResponse = await fetch('./phpmail/index.php', {
+                    method: 'POST',
+                    body: new FormData(this)
+                });
+                const content = await rawResponse.json();
+                alert(content.message);
+                button.removeAttribute('disabled');
+                button.innerHTML = "SEND MESSAGE";
+                setTimeout(() => {
+                    submitting.style.display = "none";
+                }, 5000);
+                contact.reset();
+            })();
+        });
+    </script>
 </body>
 
 </html>
