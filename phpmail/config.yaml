@@ -1,0 +1,11 @@
+merchandise:
+  db: "cinemaug_merchandise"
+  user: "root"
+  host: "localhost"
+  pass: "password"
+
+mail:
+  port: 465
+  user: "ushergodwin@bluefacestech.com"
+  host: "mail.bluefacestech.com"
+  pass: "Usher@CU2016"

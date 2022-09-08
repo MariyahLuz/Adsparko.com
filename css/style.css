@@ -3350,8 +3350,8 @@ section {
 
 .bg-gray-darker,
 .bg-additional-gray-darker .bg-additional-item {
-    background-color: #25252c;
-    fill: #25252c;
+    background-color:  #101010;
+    fill: #101010;
 }
 
 .bg-gray-darker .way-point>svg,
@@ -3790,7 +3790,7 @@ section {
     background-image: url("../images/graphi.gif");
 }
 .bg-image-14 {
-    background-image: url("../images/crc.jpg");
+    background-image: url("../images/CSR.jpg");
 }
 
 .bg-pattern-dark,
@@ -5344,6 +5344,7 @@ h6.box-info-title,
     user-select: none;
     transition: .25s all ease;
     white-space: pre-wrap;
+    top: 25px;
 }
 
 .button:focus,
