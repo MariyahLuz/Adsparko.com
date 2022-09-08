@@ -3792,7 +3792,12 @@ section {
 .bg-image-14 {
     background-image: url("../images/CSR.jpg");
 }
-
+.bg-image-15 {
+    background-image: url("../images/blog.jpg");
+}
+.bg-image-16 {
+    background-image: url("../images/CSR2.jpg");
+}
 .bg-pattern-dark,
 .bg-additional-pattern-dark .bg-additional-item {
     background-image: url("../images/bg-pattern-dark.jpg");
@@ -6906,7 +6911,7 @@ input:-webkit-autofill~.form-validation {
     color: #25252c;
     background-color: #f2f3f9;
     background-image: none;
-    border: 0px solid #f2f3f9;
+    
     border-radius: 35px;
     -webkit-appearance: none;
 }
@@ -6955,7 +6960,7 @@ textarea.form-input.form-input-lg {
 .form-label-outside {
     font-weight: 300;
     line-height: 24px;
-    color: #838386;
+    color: black;
 }
 
 @media (min-width: 1600px) {
@@ -6988,7 +6993,7 @@ textarea.form-input.form-input-lg {
     margin-bottom: 3px;
     font-size: 12px;
     letter-spacing: .02em;
-    color: #838386;
+    color: black;
     pointer-events: auto;
     cursor: pointer;
 }
