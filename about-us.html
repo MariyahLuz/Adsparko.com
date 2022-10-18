@@ -57,7 +57,7 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li class="active"><a href="about-us.html">About</a></li>
                                     <li><a href="services.html">Services</a>
-                                    <li><a href="csr.html">CSR</a> </li>  
+                                    <li><a href="csr.html">NEW</a> </li>  
                                     <li><a href="blog.html">Blog</a> </li>
                                     <li><a href="contacts.html">contact</a> </li>
                                     
@@ -75,21 +75,23 @@
                             <div class="rd-navbar-search"><a class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search" href="#"></a>
                                 <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">      
                                 </form>
-                            </div><a class="button button-sm button-default-outline" href="services.html" target="_blank">book your service</a>
+                            </div><a class="button button-sm button-default-outline" href="https://flutterwave.com/donate/gj4fpknhn0ki?_gl=1%2a1agbsrc%2a_ga%2aNjU2MDQwNTA1LjE2NjE0MzE3Njk.%2a_ga_KQ9NSEMFCF%2aMTY2MTQzNDU2MC4xLjEuMTY2MTQ0MDAwNi4wLjAuMA.." target="_blank">donate to Fimble</a>
                         </div>
                     </div>
                 </nav>
             </div>
         </header>
         <!-- Breadcrumbs-->
-        <section class="breadcrumbs-custom bg-image">
-            <div class="container">
-                <p class="breadcrumbs-custom-subtitle"></p>
-                <p class="heading-1 breadcrumbs-custom-title">About us</p>
-                <ul class="breadcrumbs-custom-path">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active">About us</li>
-                </ul>
+        <section class="section section-xl bg-image bg-image-17 text-center">
+            <div class="container-wide">
+                <div class="row row-50 justify-content-sm-center">
+                    <div class="col-md-10 col-xl-6">
+                        
+                        <div class="divider divider-default"></div>
+                        <h1>ABOUT US</h1>
+                        <div class="group-md button-group"></div>                    
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -102,22 +104,60 @@
                         <h3>Our Mantra</h3>
                         <div class="divider divider-default"></div>
                         <p class="heading-5">Our working mantra is excellent service which is at the core of 
-                            everything we do. That's what it takes to deliver a great marketing campaign.
+                            everything we do. That's what it takes to deliver a great marketing campaign.<br>
                              What makes Adsparko Communications the best agency to handle your marketing 
                              communications is the fact that we focus not only on awareness creation but 
-                             are also mindful of our clients' conversions. We believe that there should be
-                              a return on investment for every spend entrusted to us.
-                        </p>
-                        <p class="text-spacing-sm">The advertising process is not complete until  the right behavioral change
+                             are also mindful of our clients' conversions<span id="dots">...</span><span id="more">.
+                            <br>
+                            We believe that there should be a return on investment for every spend entrusted to us.<br> <br>
+                              The advertising process is not complete until  the right behavioral change
                               intended to promote has been achieved. Our creative team at Adsparko believes that to create
                                effective messaging,   three key perspectives need to be balanced.These are the client business,
-                                the agency creative plus the attitudes and fads of the intended target audience.</p>
+                                the agency creative plus the attitudes and fads of the intended target audience.</span></p>
+
+                       <button class="button button-default-outline" onclick="myFunction()" id="myBtn">Read more</button>
                     </div>
+      
                     <div class="col-md-10 col-lg-6"><img src="images/pic3.jpg" alt="" width="720" height="459" />
                     </div>
                 </div>
             </div>
         </section>
+
+        <script>
+    
+            function myFunction() {
+            
+            var dots = document.getElementById("dots");
+            
+            var moreText = document.getElementById("more");
+            
+            var btnText = document.getElementById("myBtn");
+            
+            if (dots.style.display === "inline") {
+            
+            dots.style.display = "none";
+            
+            btnText.innerHTML = "Read more";
+            
+            moreText.style.display = "none";
+
+            
+            
+            } else {
+            
+            dots.style.display = "inline";
+            
+            btnText.innerHTML = "Read less";
+            
+            moreText.style.display = "inline";
+            
+            }
+            
+            }
+            
+            </script>
+
 
         <section class="section section-lg bg-gray-lighter">
             <div class="container container-bigger">
@@ -130,13 +170,15 @@
                             channeled at them everyday that it is practically a struggle to stand out. 
                             This is why brands need agencies that are not afraid to make the right call that
                              will get them the attention and ROI that they need.
-                        </p>
-                        <p>Adsparko passionately believes that bald creativity is the solution that brands 
+                        <br>
+                          Adsparko passionately believes <span id="dots1"></span><span id="more1">that bald creativity is 
+                              the solution that brands 
                             need to get noticed and their message consumed positively by their target 
                             audiences. We therefore invest a number of processes in understanding the
                              different segments of the market in order to develop clear and relevant messages.
-                            </p>
-                            <p>We believe in DISRUPTION as a driver of genuine brand engagement that ultimately
+                            <br>
+                            <br>
+                             We believe in DISRUPTION as a driver of genuine brand engagement that ultimately
                                  causes the desired behavior from the potential customer. A brand message has 
                                  got to disrupt its audience for it to cause the desired response from them.
                                   A customer will only stop and take note of a brand after that brand disrupts 
@@ -145,15 +187,191 @@
                                   disruptions that ultimately guarantee brands their return on investment in
                                    the long run. We offer a range of services which include Public Relations,
                                     Advertising planning and management, media management, market research & 
-                                    digital marketing.
+                                    digital marketing.</span> 
                                 </p>
-                                <div class="box-cta-inner"><a class="button button-secondary" href="contacts.html">Contact Us</a></div>
+                                <button class="button button-default-outline" onclick="myFunction1()" id="myBtn1">Read more</button>
                     </div>
                     <div class="col-md-10 col-lg-6"><img src="images/media7.jpg" alt="" width="720" height="518" />
                     </div>
                 </div>
             </div>
         </section>
+
+        <script>
+    
+            function myFunction1() {
+            
+            var dots1 = document.getElementById("dots1");
+            
+            var moreText1 = document.getElementById("more1");
+            
+            var btnText1 = document.getElementById("myBtn1");
+            
+            if (moreText1.style.display === "inline") {
+            
+            moreText1.style.display = "none";
+            
+            btnText1.innerHTML = "Read more";
+            
+            dots1.style.display = "none";
+
+            
+            
+            } else {
+            
+            moreText1.style.display = "inline";
+            
+            btnText1.innerHTML = "Read less";
+            
+            dots1.style.display = "inline";
+            
+            }
+            
+            }
+            
+            </script>
+
+
+<!-- what we do-->
+<section class="section section-lg text-center">
+    <div class="container-wide">
+        <h3>What We Do</h3>
+        <div class="divider divider-default"></div>
+        <div class="row row-50 row-xxl-90 offset-custom-2 text-left">
+            <div class="col-sm-10 col-md-6 col-xl-3">
+                <article class="box-minimal">
+                    <div class="box-minimal-header">
+                        <!-- <div class="box-minimal-icon fl-bigmug-line-search74"></div> -->
+                        <h6 class="box-minimal-title">Creative Design</h6>
+                    </div>
+                    <div class="box-minimal-text">Our team carries a couple of creative geniuses that thrive
+                         in building designs to give you a one of a kind digital presence that will achieve 
+                         your goals. We use a combination of art and data, to get into the minds of your 
+                         target audience, understand how they relate with the product, then create the message 
+                         that will make conversions the client needs in forms like; <br> ideation, graphic design,
+                          script writing and animation and motion Design.
+
+                        </div>
+                </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3">
+                <article class="box-minimal">
+                    <div class="box-minimal-header">
+                        <!-- <div class="box-minimal-icon fl-bigmug-line-search74"></div> -->
+                        <h6 class="box-minimal-title">Public Relations </h6>
+                    </div>
+                    <div class="box-minimal-text">We understand how delicate and vital managing a brand is;
+                        Crisis management, post-strategy planning and content development is where we excel. 
+                        Adsparko PR also ensures press coverage for all clientele events to position a brand
+                         in the positive light. Under this wing we offer a range of services like;<br>
+                        Sponsorship management,
+                        Corporate Social Responsibility Management, 
+                        Government Relations (Lobbying and Advocacy),
+                        Event Planning & Management,
+                        Crisis Management.
+                        
+                        
+                        </div>
+                </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3">
+                <article class="box-minimal">
+                    <div class="box-minimal-header">
+                        <h6 class="box-minimal-title">Experiential Marketing</h6>
+                    </div>
+                    <div class="box-minimal-text">A solid emotional connection between any brand and 
+                        their customer is a key priority for a business to flourish. We have the unbeatable
+                         expertise in creating innovative and engaging strategies for memorable customer 
+                         experiences. With this an understanding is built which definitely spikes sales of 
+                         the brand’s products and services. We execute these with a lot of ease;<br>
+                        Product sampling – Mall Activations, Bar Crawls,
+                        Product Sensitization - Rig car activations ,
+                        Launch Activations  - Flash Mobs.
+                        
+                        </div>
+                </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3">
+                <article class="box-minimal">
+                    <div class="box-minimal-header"> 
+                        <h6 class="box-minimal-title">Corporate social responsibility</h6>
+                    </div>
+                    <div class="box-minimal-text">CSR relates to good news stories and is a source of positive
+                         public relations. At Adsparko, our PR professionals identify worthwhile causes and 
+                         mobilize corporate companies to make investment in their communities. We have a
+                          range of projects that we are currently driving and the latest is below. Feel
+                           free to follow us on our social media pages to stay informed on our CSR projects.<br>
+                        UG4Fimbo
+                        
+                        </div>
+                </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3">
+                <article class="box-minimal">
+                    <div class="box-minimal-header">
+                        <!-- <div class="box-minimal-icon fl-bigmug-line-favourites5"></div> -->
+                        <h6 class="box-minimal-title">Event Planning and management</h6>
+                    </div>
+                    <div class="box-minimal-text"> 
+                        Empathy is our DNA. Our preference is to connect with you first and work closely together
+                        to ensure accurate message portrayal and see that we do not miss any detail on our journey to 
+                        create a remarkable event that will create a great impression that will last at your clients’ heart.
+                        On interaction you will find that we’re focused on creating an event that shall sweep your audience off 
+                        their feet, and we definitely are to make it happen.
+
+                        </div>
+                </article>
+            </div>
+            <!-- row 2     -->
+            <div class="col-sm-10 col-md-6 col-xl-3">
+                <article class="box-minimal">
+                    <div class="box-minimal-header">
+                        <h6 class="box-minimal-title">Media Buying & Management</h6>
+                    </div>
+                    <div class="box-minimal-text">
+                        It is just not enough to have compelling visuals. Our goal as a company is to focus
+                         on the strategies behind the campaigns,give best rates for advertising material and 
+                         get impressions from the right audience at the most favorable cost. Our team further 
+                         helps identify the kind of media most suitable for every particular audience and the
+                          frequencies to follow so as to ensure viewership from that audience in target.
+
+                         </div>
+                </article>
+            </div>
+            
+            <div class="col-sm-10 col-md-6 col-xl-3">
+                <article class="box-minimal">
+                    <div class="box-minimal-header">
+                        <h6 class="box-minimal-title">Brand ambassadorship</h6>
+                    </div>
+                    <div class="box-minimal-text">
+                        To awaken the emotion of your audience, we have a brand ambassador program filled with 
+                        individuals of interesting and different  caliber to embody your brand’s image and 
+                        represent it in every suitable way. You will be thrilled to learn how dedicated they 
+                        are to executing a perfect role
+                        
+                        .</div>
+                </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3">
+                <article class="box-minimal">
+                    <div class="box-minimal-header">
+                        <h6 class="box-minimal-title">Digital marketing</h6>
+                    </div>
+                    <div class="box-minimal-text">Navigating the digital world can be hard without the right
+                         partner. We are here with a full blown digital marketing plan to increase conversions,
+                          drive awareness and boost brand recognition. We get this done with; Content creation,
+                           Digital Strategy Formulation, Digital media buying, and Search Engine Optimization.
+
+                        </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 
         <!-- our team-->
         <section class="section section-wrap section-wrap-lg section-wrap-sm bg-gray-darker text-center text-md-left">
@@ -248,42 +466,18 @@
 
        
 
-       <!-- CTA Gradient-->
-       <section class="section section-md bg-gradient-1 text-center text-md-left">
-        <div class="container-wide">
-            <div class="row row-50 justify-content-sm-center">
-                <div class="col-xxl-8">
-                    <div class="box-cta box-cta-inline">
-                        <div class="box-cta-inner">
-                            <h3 class="box-cta-title">Do you need a consultation?</h3>
-                            <p>Adsparko can give you lots of advantages, from which you will surely benefit.</p>
-                        </div>
-                        <div class="box-cta-inner"><a class="button button-secondary" href="contacts.html">Free Consultation</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
         <!-- Footer Default-->
         <footer class="section page-footer page-footer-default text-left bg-gray-lighter">
             <div class="container-wide">
                 <div class="row row-50 justify-content-sm-center">
-                    <div class="col-md-6 col-xl-3">
-                        <div class="inset-xxl">
-                            <h6>About us</h6>
-                            <p class="text-spacing-sm">Adsparko is a full service 360 degree advertising agency with a 
-                                passion for bridging the relevance gap between brands and their audiences. We provide the 
-                                full service from below-the-line, through-the -line and above-the-line communication for brands.</p>
-                        </div>
-                    </div>
+                    
                     <div class="col-md-6 col-xl-2">
                         <h6>Quick links</h6>
                         <ul class="list-marked list-marked-primary">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about-us.html">About Us</a></li>
                             <li><a href="services.html">Services</a></li>
-                            <li><a href="csr.html">CSR</a></li>
+                            <li><a href="csr.html">NEW</a></li>
                             <li><a href="blog.html">Blog</a></li>
                             <li><a href="contacts.html">Contacts</a></li>
                         </ul>
@@ -308,7 +502,7 @@
                                     <input class="form-input" type="email" name="email" data-constraints="@Email @Required" id="subscribe-form-email-1" />
                                     <label class="form-label" for="subscribe-form-email-1">Enter your e-mail</label>
                                 </div>
-                                <button class="button form-button button-sm button-primary" type="submit">Subscribe</button>
+                                <button class="button form-button button-sm button-default-outline" type="submit">Subscribe</button>
                             </div>
                         </form>
                     </div>

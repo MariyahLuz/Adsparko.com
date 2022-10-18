@@ -9,6 +9,10 @@
  * [Table of contents]
  */
 
+ #more {
+     display: none;
+}
+
 .bg-gradient.bg-secondary,
 .bg-secondary.bg-gradient-1,
 .bg-secondary.bg-gradient-2,
@@ -3092,7 +3096,8 @@ section {
 .bg-gray-darker .button-default-outline,
 .bg-additional-gray-darker .bg-additional-item .button-default-outline {
     color: #ffffff;
-    background-color: transparent;
+    background-color: #F10066;
+   
 }
 
 .bg-gradient-1 .box-minimal-title,
@@ -3252,8 +3257,8 @@ section {
 .bg-secondary-2 .button-default-outline,
 .bg-secondary-2 .button-default-outline:focus {
     color: #ffffff;
-    background-color: transparent;
-    border-color: #ffffff;
+    background-color: #F10066;
+    border-color: #F10066;
 }
 
 .bg-primary-accent .button-default-outline:hover,
@@ -3459,8 +3464,8 @@ section {
 .bg-gray-darker .button-default-outline:focus,
 .bg-additional-gray-darker .bg-additional-item .button-default-outline:focus {
     color: #ffffff;
-    background-color: transparent;
-    border-color: #ffffff;
+    background-color: #F10066;
+    border-color: #F10066;
 }
 
 .bg-gray-darker .button-default-outline:hover,
@@ -3557,8 +3562,8 @@ section {
 .bg-gradient-3 .button-default-outline,
 .bg-gradient-3 .button-default-outline:focus {
     color: #ffffff;
-    background-color: transparent;
-    border-color: #ededed;
+    background-color: #F10066;
+    border-color: #F10066;
 }
 
 .bg-gradient-3 .button-default-outline:hover,
@@ -3620,8 +3625,8 @@ section {
 .bg-image .button-default-outline:focus,
 .bg-additional-image .bg-additional-item .button-default-outline:focus {
     color: #ffffff;
-    background-color: transparent;
-    border-color: #ffffff;
+    background-color: #F10066;
+    border-color: #F10066;
 }
 
 .bg-image .button-default-outline:hover,
@@ -3775,7 +3780,23 @@ section {
 }
 
 .bg-image-9 {
-    background-image: url("../images/media1.jpg!d");
+    animation-name: change;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+     
+}
+@keyframes change {
+    0% {
+        background-image: url("../images/media1.jpg!d");
+    }
+    75% {
+        background-image: url("../images/media4.jpg");
+    }
+    100% {
+        background-image: url("../images/media3.jpg");
+    }
+
 }
 
 .bg-image-10 {
@@ -3787,7 +3808,7 @@ section {
 }
 
 .bg-image-13 {
-    background-image: url("../images/graphi.gif");
+    background-image: url("../images/serv1.jpg");
 }
 .bg-image-14 {
     background-image: url("../images/CSR.jpg");
@@ -3798,6 +3819,10 @@ section {
 .bg-image-16 {
     background-image: url("../images/CSR2.jpg");
 }
+.bg-image-17 {
+    background-image: url("../images/Disruption.jpg");
+}
+
 .bg-pattern-dark,
 .bg-additional-pattern-dark .bg-additional-item {
     background-image: url("../images/bg-pattern-dark.jpg");
@@ -5394,17 +5419,17 @@ h6.box-info-title,
 
 .button-default,
 .button-default:focus {
-    color: #25252c;
-    background-color: #ededed;
-    border-color: #ededed;
+    color: #ffffff;
+    background-color: #ad1457 !important;
+    border-color: #ad1457 !important;
 }
 
 .button-default:hover,
 .button-default:active,
 .button-default:hover {
     color: #ffffff;
-    background-color: #ad1457;
-    border-color: #ad1457;
+    background-color: #F10066 !important;
+    border-color: #F10066 !important;
 }
 
 .button-primary {
@@ -5425,7 +5450,7 @@ h6.box-info-title,
     left: -2px;
     border-radius: inherit;
     z-index: -1;
-    background: linear-gradient(to right, #ad1457, #35c8a4);
+    background: linear-gradient(to right, #ad1457, #02bcf3);
     opacity: 1;
     transition: inherit;
 }
@@ -5437,6 +5462,7 @@ h6.box-info-title,
 .button-primary:hover::before {
     opacity: 0;
 }
+
 
 .button-secondary,
 .button-secondary:focus {
@@ -5455,17 +5481,17 @@ h6.box-info-title,
 
 .button-default-outline,
 .button-default-outline:focus {
-    color: #25252c;
-    background-color: #ffffff;
-    border-color: #ededed;
+    color: #ffffff;
+    background-color: #ad1457 !important;
+    border-color: #ad1457 !important;
 }
 
 .button-default-outline:hover,
 .button-default-outline:active,
 .button-default-outline:hover {
     color: #ffffff;
-    background-color: #F10066;
-    border-color: #F10066;
+    background-color: #F10066 !important;
+    border-color: #F10066 !important;
 }
 
 .button-default-outline.button-default-outline_facebook:hover {
@@ -21592,12 +21618,12 @@ html[class*="ie"] .dtp-hour-hand {
 .rd-navbar-fixed .rd-navbar-collapse {
     position: fixed;
     right: 4px;
-    top: 64px;
+    top: 0px;
     transform: translateX(-10px);
     padding: 15px 10px;
-    width: 280px;
+    width: 180px;
     border-radius: 3px;
-    background-color: #ffffff;
+    background-color: transparent;
     box-shadow: 0 6px 8px rgba(110, 123, 157, 0.17);
     text-align: left;
     font-size: 14px;
@@ -21611,7 +21637,7 @@ html[class*="ie"] .dtp-hour-hand {
     transform: none;
     opacity: 1;
     pointer-events: auto;
-    z-index: 999;
+    z-index: 997;
 }
 
 .rd-navbar-fixed .rd-navbar-collapse-toggle {
@@ -23821,8 +23847,8 @@ html.tablet .ui-to-top {
 .swiper-container .button-default-outline,
 .swiper-container .button-default-outline:focus {
     color: #ffffff;
-    background-color: transparent;
-    border-color: #ffffff;
+    background-color: #F10066;
+    border-color: #F10066;
 }
 
 .swiper-container .button-default-outline:hover,
@@ -24443,8 +24469,8 @@ html.tablet .ui-to-top {
 .swiper-main .button-default-outline,
 .swiper-main .button-default-outline:focus {
     color: #ffffff;
-    background-color: transparent;
-    border-color: #ededed;
+    background-color: #F10066;
+    border-color: #F10066;
 }
 
 .swiper-main .button-default-outline:hover,

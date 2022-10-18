@@ -57,7 +57,7 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="about-us.html">About</a></li>
                                     <li><a href="services.html">Services</a>
-                                    <li class="active"><a href="csr.html">CSR</a> </li>  
+                                    <li class="active"><a href="csr.html">NEW</a> </li>  
                                     <li><a href="blog.html">Blog</a> </li>
                                     <li><a href="contacts.html">contact</a> </li>
                                     
@@ -75,7 +75,7 @@
                             <div class="rd-navbar-search"><a class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search" href="#"></a>
                                 <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">      
                                 </form>
-                            </div><a class="button button-sm button-default-outline" href="services.html" target="_blank">book your service</a>
+                            </div><a class="button button-sm button-default-outline" href="https://flutterwave.com/donate/gj4fpknhn0ki?_gl=1%2a1agbsrc%2a_ga%2aNjU2MDQwNTA1LjE2NjE0MzE3Njk.%2a_ga_KQ9NSEMFCF%2aMTY2MTQzNDU2MC4xLjEuMTY2MTQ0MDAwNi4wLjAuMA.." target="_blank">donate to Fimble</a>
                         </div>
                     </div>
                 </nav>
@@ -102,22 +102,23 @@
                         <div class="divider divider-default"></div>
                         <p class="heading-5">Corporate social responsibility is a broad concept that takes many
                              forms depending on the company and/or industry but in a nutshell, it entails  
-                             actions done by companies to build goodwill in the communities they operate. 
+                             actions done by companies to build goodwill in the communities they operate. <br> 
                              The rationale is hinged on the fact that if the communities support the companies 
                              to make profits, then it is only in good order that companies should reinvest in 
-                             the communities they thrive from.
+                             the communities they thrive from.<span id="dots">...</span><span id="more">
                              <br>
                              <br>
                             Adsparko  Communications organizes a number of philanthropist activities which 
                             are designed to intervene on the social scene. We have worked with a number of
                              companies in promoting their good will in a number of social causes that have 
-                             positively impacted their image ratings.                           
+                             positively impacted their image ratings. <br>                          
                             Are you looking for a worthy social cause to join or how to maximize your 
                             corporate social responsibility budget effectively? Give us a call and our 
-                            public relations team will be happy to come up with a plan for you.
+                            public relations team will be happy to come up with a plan for you.</span> 
                             </p>
+                            <button class="button button-default-outline" onclick="myFunction()" id="myBtn">Read more</button>
                         
-                             <a class="button button-primary" href="https://flutterwave.com/donate/gj4fpknhn0ki?_gl=1%2a1agbsrc%2a_ga%2aNjU2MDQwNTA1LjE2NjE0MzE3Njk.%2a_ga_KQ9NSEMFCF%2aMTY2MTQzNDU2MC4xLjEuMTY2MTQ0MDAwNi4wLjAuMA.." target="_blank">Make a Donation</a>
+                             <a class="button button-default-outline" href="https://flutterwave.com/donate/gj4fpknhn0ki?_gl=1%2a1agbsrc%2a_ga%2aNjU2MDQwNTA1LjE2NjE0MzE3Njk.%2a_ga_KQ9NSEMFCF%2aMTY2MTQzNDU2MC4xLjEuMTY2MTQ0MDAwNi4wLjAuMA.." target="_blank">UGAFIMBO</a>
                     </div>
                     
                     <div class="col-md-10 col-lg-6"><img src="images/CSR2.jpg" alt="" width="720" height="518" />
@@ -129,21 +130,21 @@
         <footer class="section page-footer page-footer-default text-left bg-gray-lighter">
             <div class="container-wide">
                 <div class="row row-50 justify-content-sm-center">
-                    <div class="col-md-6 col-xl-3">
+                    <!-- <div class="col-md-6 col-xl-3">
                         <div class="inset-xxl">
                             <h6>About us</h6>
                             <p class="text-spacing-sm">Adsparko is a full service 360 degree advertising agency with a 
                                 passion for bridging the relevance gap between brands and their audiences. We provide the 
                                 full service from below-the-line, through-the -line and above-the-line communication for brands.</p>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-md-6 col-xl-2">
                         <h6>Quick links</h6>
                         <ul class="list-marked list-marked-primary">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about-us.html">About Us</a></li>
                             <li><a href="services.html">Services</a></li>
-                            <li><a href="csr.html">CSR</a></li>
+                            <li><a href="csr.html">NEW</a></li>
                             <li><a href="blog.html">Blog</a></li>
                             <li><a href="contacts.html">Contacts</a></li>
                         </ul>
@@ -168,7 +169,7 @@
                                     <input class="form-input" type="email" name="email" data-constraints="@Email @Required" id="subscribe-form-email-1" />
                                     <label class="form-label" for="subscribe-form-email-1">Enter your e-mail</label>
                                 </div>
-                                <button class="button form-button button-sm button-primary" type="submit">Subscribe</button>
+                                <button class="button form-button button-sm button-default-outline" type="submit">Subscribe</button>
                             </div>
                         </form>
                     </div>
@@ -182,6 +183,42 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+    
+        function myFunction() {
+        
+        var dots = document.getElementById("dots");
+        
+        var moreText = document.getElementById("more");
+        
+        var btnText = document.getElementById("myBtn");
+        
+        if (dots.style.display === "inline") {
+        
+        dots.style.display = "none";
+        
+        btnText.innerHTML = "Read more";
+        
+        moreText.style.display = "none";
+
+        
+        
+        } else {
+        
+        dots.style.display = "inline";
+        
+        btnText.innerHTML = "Read less";
+        
+        moreText.style.display = "inline";
+        
+        }
+        
+        }
+        
+        </script>
+
+
     <!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
         (function(w, d, s, l, i) {
