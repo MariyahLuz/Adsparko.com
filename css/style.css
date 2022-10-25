@@ -3781,20 +3781,19 @@ section {
 
 .bg-image-9 {
     animation-name: change;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-duration: 30s;
+    animation-duration:   30s;
+    animation-iteration-count: infinite; 
+   
      
 }
 @keyframes change {
     0% {
         background-image: url("../images/media1.jpg!d");
     }
-    75% {
-        background-image: url("../images/media4.jpg");
-    }
+   
+   
     100% {
-        background-image: url("../images/media3.jpg");
+        background-image: url("../images/media1.jpg!d");
     }
 
 }
