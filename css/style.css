@@ -12,6 +12,23 @@
  #more {
      display: none;
 }
+ .container1{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     height: 500px;
+     width: 800px;
+     background: #F10066 !important;
+     transform: translate(-50%, -50%);
+     border: 1px solid #fff;
+ }
+ .navigator{
+     display: flex;
+     position: absolute;
+     left: 50%;
+     bottom: 20px;
+     transform: translate(-50%);
+ }
 
 .bg-gradient.bg-secondary,
 .bg-secondary.bg-gradient-1,
