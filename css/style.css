@@ -12,6 +12,7 @@
  #more {
      display: none;
 }
+
  .container1{
      position: absolute;
      top: 50%;
@@ -161,7 +162,7 @@ body {
     font-size: 15px;
     line-height: 1.6;
     color: #838386;
-    background-color: #ffffff;
+    background-color: #f2f3f9;
     -webkit-text-size-adjust: none;
     -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -185,7 +186,7 @@ body {
 
 a {
     color: rgb(184, 50, 72);
-    text-decoration: none;
+    text-decoration: none !important;
     transition: .25s;
 }
 
@@ -220,8 +221,7 @@ a[href*='mailto'] {
 img {
     display: inline-block;
     max-width: 100%;
-    height: 480px;
-    object-fit: contain;
+    height: 380px;
 }
 
 hr {
@@ -2368,14 +2368,14 @@ section {
 
 .bg-white .bg-decoration>svg,
 .bg-default .bg-decoration>svg {
-    fill: #ffffff;
+    fill: #f2f3f9;
 }
 
 .bg-white .time-line-vertical-element:before,
 .bg-white .time-line-vertical-element .unit-body:before,
 .bg-default .time-line-vertical-element:before,
 .bg-default .time-line-vertical-element .unit-body:before {
-    background-color: #ffffff;
+    background-color: #f2f3f9;
 }
 
 .bg-white .twitter-feed,
@@ -2395,7 +2395,7 @@ section {
 .bg-gray-lighter {
     background-color: #f2f3f9;
     fill: #f2f3f9;
-}
+ }/* f2f3f9 */
 
 .bg-gray-lighter .way-point>svg {
     fill: inherit;
@@ -2419,15 +2419,15 @@ section {
 }
 
 .bg-gray-lighter .pricing-box {
-    background-color: #ffffff;
+    background-color: #f2f3f9;
 }
 
 .bg-gray-lighter .slider-widget {
-    background: #ffffff;
+    background: #f2f3f9;
 }
 
 .bg-gray-lighter .post-classic {
-    background: #ffffff;
+    background: #f2f3f9;
 }
 
 .bg-gray-lighter .post-modern-body {
@@ -3798,22 +3798,12 @@ section {
 }
 
 .bg-image-9 {
-    animation-name: change;
-    animation-duration:   30s;
-    animation-iteration-count: infinite; 
+    
+    background-image: url("../images/game7.jpg");
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
    
-     
-}
-@keyframes change {
-    0% {
-        background-image: url("../images/media1.jpg!d");
-    }
-   
-   
-    100% {
-        background-image: url("../images/media1.jpg!d");
-    }
-
 }
 
 .bg-image-10 {
@@ -5376,7 +5366,7 @@ h6.box-info-title,
 .button {
     position: relative;
     display: inline-block;
-    max-width: 100%;
+    max-width: 50px;
     padding: 9px 30px;
     min-width: 210px;
     font-family: "Poppins", Helvetica, Arial, sans-serif;
@@ -5391,7 +5381,7 @@ h6.box-info-title,
     user-select: none;
     transition: .25s all ease;
     white-space: pre-wrap;
-    top: 25px;
+    top: 5px;
 }
 
 .button:focus,
@@ -7882,7 +7872,7 @@ textarea.form-input.form-input-lg {
         transform: scale3d(1, 1, 1);
     }
     .desktop .titled-gallery-caption {
-        font-size: 24px;
+        font-size: 14px;
     }
     .desktop .titled-gallery-item .caption {
         perspective: 1000px;
@@ -15267,10 +15257,17 @@ html.lt-ie-10 .row-narrow>*+[class*='col'],
 }
 
 .container-wide {
+
     max-width: 1800px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
+
+    /* max-width: 1800px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px; */
 }
 
 .row-custom-bordered [class*='col'] {
